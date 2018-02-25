@@ -1,0 +1,10 @@
+Creating files in Go:
+ version 1:
+    fileName := fmt.Sprintf("%s%d%s",*outputFolder, (i+1), ".txt")
+	fmt.Printf("%s\n", fileName)
+	f, err := os.Create(fileName)
+    f.WriteString(value)
+ version 2:
+    ioutil.WriteFile(filename, p.Body, 0600)
+Reading from file: 
+    body, err := ioutil.ReadFile(filename)
