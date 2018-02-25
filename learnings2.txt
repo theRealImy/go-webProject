@@ -8,3 +8,5 @@ Creating files in Go:
     ioutil.WriteFile(filename, p.Body, 0600)
 Reading from file: 
     body, err := ioutil.ReadFile(filename)
+
+Creating a basic server using net/http
